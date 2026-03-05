@@ -1,0 +1,32 @@
+.titulo {
+    color: blue;
+}
+
+.p_destaque {
+    color: green;
+    background-color: cyan;
+}
+
+#subtitulo {
+    color: brown;
+}
+
+#paragrafo {
+    color: blueviolet;
+}
+
+/* 
+   ESPECIFICIDADE CSS - ORDEM DE PRIORIDADE:
+   
+   Os seletores com MAIOR PRIORIDADE são: #subtitulo e #paragrafo
+   
+   Motivo: Utilizam seletores de ID (#), que possuem prioridade máxima na cascata CSS.
+   A ordem de especificidade é:
+   1. ID (seletor #) - MAIOR PRIORIDADE
+   2. Classe (seletor .) - Prioridade média (utilizados por .titulo e .p_destaque)
+   3. Elemento - Prioridade mínima
+   
+   Portanto, estilos definidos com #subtitulo e #paragrafo sempre sobrescrevem
+   estilos definidos com .titulo e .p_destaque, independente da ordem no CSS.
+*/
+

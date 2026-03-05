@@ -1,0 +1,32 @@
+.div1 {
+    background-color: blue;
+    border: 4px solid;
+    margin: auto;
+    padding: 50px;
+    width: 11%;
+    height: 11%;
+    text-align: center;
+}
+
+.div2 {
+    background-color: pink;
+    border: 4px solid;
+    margin: auto;
+    padding: 40px;
+    width: 11%;
+    height: 11%;
+    text-align: center;
+}
+
+.div3 {
+    background-color: red;
+    border: 4px solid;
+    margin: auto;
+    padding: 30px;
+    width: 11%;
+    height: 11%;
+    text-align: center;
+}
+
+/* Padding = espaço interno (aumenta o tamanho visual do elemento com cor de fundo)
+   Margin = espaço externo (afasta de outros elementos, sem cor) */

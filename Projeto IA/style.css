@@ -1,0 +1,110 @@
+/* reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+}
+header {
+    background-color: #004d99;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 40px auto;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+/* área de entrada */
+.input-area {
+    flex: 1 1 400px;
+    display: flex;
+    flex-direction: column;
+}
+.input-area label {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+.input-area textarea {
+    resize: vertical;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 12px;
+}
+
+.btn-analisar {
+    background-color: #00a8ff;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+.btn-analisar:hover {
+    background-color: #007bb2;
+}
+.btn-analisar:active {
+    transform: scale(0.97);
+}
+
+/* área de resultado */
+.result-area {
+    flex: 1 1 300px;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.result-area h2 {
+    margin-bottom: 16px;
+    color: #004d99;
+}
+
+.result {
+    padding: 12px;
+    border-radius: 4px;
+    font-weight: bold;
+    text-align: center;
+}
+.result.positivo {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+.result.negativo {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+.result.neutro {
+    background-color: #fff3cd;
+    color: #856404;
+    border: 1px solid #ffeeba;
+}
+
+/* responsividade */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .input-area, .result-area {
+        flex: 1 1 auto;
+    }
+}
